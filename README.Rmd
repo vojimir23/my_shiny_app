@@ -1,0 +1,82 @@
+---
+title: "README"
+author: "Vojimir Ranitovic"
+date: "15/04/2021"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Vojimir Ranitovic
+
+My application supposes to show and filter some of the world's data for each country. 
+Two datasets were used, the first one from excel file data.xlsx and the second one from the online database Gapminder ( gapminder library).
+At first, this app is represented with the dashboard. 
+There are four sections: "Data view", "Graphical representation", "GDP comparison" and "World map".
+
+**First section: There are just represented data from the excel file, and an action button at first ( after clicking data are shown).
+
+**Second section: Consists of sidebar panel and two inputs where we can choose the variables for X and Y-axis. 
+There are also summary statistics for chosen variables, a short description of variables, and plotly graph.
+
+Graph from the second section is below:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Third section is for comparing GDP per capita of two countries. Here I used the second data set from the web.
+There are two input sections and a graph made with ggplot.
+
+Graph from the third section is below:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Fourth section is about representing the world's data on an interactive map.
+The library(leaflet) is used for this map. Also, there is a slider below the map that filters the countries
+that has more/less income than others. If the country is not in the range the popup icon will disappear.
+
+Photo of the leaflet map is below:
